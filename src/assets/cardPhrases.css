@@ -1,0 +1,75 @@
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.background-card{
+  margin: auto auto;
+  width: 33%;
+  height: auto;
+  padding: 1rem;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 10px;
+  animation: animationCard 1s 3;
+}
+/* Text */
+.author{
+  font-size: 15px;
+  text-align: end;
+  padding-top: 40px;
+  padding-right: 5%;
+}
+.fa-quote-left{
+  font-size: 56px;
+}
+.flex{
+  display: flex;
+  gap: 10px;
+}
+.phrase{
+  padding-top: 13px;
+}
+/* Buttons */
+
+.button-next{
+  margin-top: 15px;
+  margin-left: 80%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  cursor: pointer;
+
+  animation: animationButton 1s infinite;
+}
+.fa-angle-right{
+  font-size: 22px;
+}
+.button:hover{
+  animation: animationButton 0s;
+}
+
+/* Animations */
+
+@keyframes animationButton {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes animationCard {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(6px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
