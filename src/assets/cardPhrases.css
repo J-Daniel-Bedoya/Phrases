@@ -45,7 +45,7 @@ body{
 .fa-angle-right{
   font-size: 22px;
 }
-.button:hover{
+.button-next:hover{
   animation: animationButton 0s;
 }
 
